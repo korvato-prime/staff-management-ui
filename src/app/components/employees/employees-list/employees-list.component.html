@@ -1,0 +1,19 @@
+<div class="container my-5">
+<h1 class="mb-3">Employees</h1>
+<table class="table"> 
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Full Name</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.fullname}}</td>
+            <td>{{employee.dateofbirth}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
